@@ -1,0 +1,117 @@
+window:
+  padding:
+    x: 0
+    y: 0
+  class:
+    instance: Alacritty
+    general: Alacritty
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+#CaskaydiaCove Nerd Fonts
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font
+  bold:
+    family: CaskaydiaCove Nerd Font
+    style: Bold
+  italic:
+    family: CaskaydiaCove Nerd Font
+    style: Italic
+  bold_italic:
+    family: CaskaydiaCove Nerd Font
+    style: Bold Italic
+  size: 11
+
+#FiraCode Nerd Fonts
+#font:
+#  normal:
+#    family: FiraCode Nerd Font
+#    style: Italic
+#  bold:
+#    family: FiraCode Nerd Font
+#    style: Bold
+#  italic:
+#    family: FiraCode Nerd Font
+#    style: Italic
+#  bold_italic:
+#    family: FiraCode Nerd Font
+#    style: Bold Italic
+#  size: 11
+
+draw_bold_text_with_bright_colors: true
+
+#background_opacity: 0.8
+
+# MonokaiPro #
+colors:
+  # Default colors
+  primary:
+    background: '0x2D2A2E'
+    foreground: '0xfff1f3'
+
+  # Normal colors
+  normal:
+    black:   '0x2c2525'
+    red:     '0xfd6883'
+    green:   '0xadda78'
+    yellow:  '0xf9cc6c'
+    blue:    '0xf38d70'
+    magenta: '0xa8a9eb'
+    cyan:    '0x85dacc'
+    white:   '0xfff1f3'
+
+  # Bright colors
+  bright:
+    black:   '0x72696a'
+    red:     '0xfd6883'
+    green:   '0xadda78'
+    yellow:  '0xf9cc6c'
+    blue:    '0xf38d70'
+    magenta: '0xa8a9eb'
+    cyan:    '0x85dacc'
+    white:   '0xfff1f3'
+
+# Inferno theme #
+#colors:
+#  # Default colors
+#  primary:
+#    background: '0x270d06'
+#    foreground: '0xd9d9d9'
+#
+#  # Normal colors
+#  normal:
+#    black:   '0x330000'
+#    red:     '0xff3300'
+#    green:   '0xff6600'
+#    yellow:  '0xff9900'
+#    blue:    '0xffcc00'
+#    magenta: '0xff6600'
+#    cyan:    '0xff9900'
+#    white:   '0xd9d9d9'
+#
+#  # Bright colors
+#  bright:
+#    black:   '0x663300'
+#    red:     '0xff6633'
+#    green:   '0xff9966'
+#    yellow:  '0xffcc99'
+#    blue:    '0xffcc33'
+#    magenta: '0xff9966'
+#    cyan:    '0xffcc99'
+#    white:   '0xd9d9d9'
+
+cursor:
+  style:
+    shape: Underline
+    blinking: Off
+
+selection:
+  save_to_clipboard: false
+
+live_config_reload: true
+
+shell:
+ program: /usr/bin/zsh
