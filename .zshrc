@@ -117,6 +117,9 @@ alias gwal='~/.gwal.sh'
 # Alias to shortcut icat when using kitty terminal
 alias icat='kitten icat'
 
+# Alieas to shortcut clear to cls
+alias cls='clear'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
