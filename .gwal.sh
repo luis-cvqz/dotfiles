@@ -1,0 +1,1 @@
+/home/luis/.gwal.sh

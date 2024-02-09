@@ -111,10 +111,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias to open nvim in alacritty (Still deciding if I actually keep it that way)
+alias nvim='alacritty -e nvim'
+
 # Alias for exa file listing
- alias ls='exa --icons'
+alias ls='exa --icons'
 alias l='exa --icons -lah'
 alias ll='exa --icons -lh'
+alias lst='exa --icons --tree'
 
 # Alias for GNOME wallpaper management script
 alias gwal='~/.gwal.sh'
