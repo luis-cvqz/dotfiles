@@ -111,6 +111,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias for exa file listing
+ alias ls='exa --icons'
+alias l='exa --icons -lah'
+alias ll='exa --icons -lh'
+
 # Alias for GNOME wallpaper management script
 alias gwal='~/.gwal.sh'
 
