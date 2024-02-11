@@ -111,8 +111,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Alias to open nvim in alacritty (Still deciding if I actually keep it that way)
-alias nvim='alacritty -e nvim'
+# Alias to execute Android Studio from console
+alias android-studio='cd /opt/android-studio/bin/ && ./studio.sh && cd ~/'
 
 # Alias for exa file listing
 alias ls='exa --icons'
