@@ -28,22 +28,22 @@ background = "0x2D2A2E"
 foreground = "0xfff1f3"
 
 [font]
-size = 12
+size = 11
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
 
 [font.bold]
-family = "CaskaydiaCove Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold"
 
 [font.bold_italic]
-family = "CaskaydiaCove Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Bold Italic"
 
 [font.italic]
-family = "CaskaydiaCove Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
-
-[font.normal]
-family = "CaskaydiaCove Nerd Font"
 
 [scrolling]
 history = 10000
