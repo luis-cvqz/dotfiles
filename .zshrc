@@ -112,7 +112,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Alias to execute Android Studio from console
-alias android-studio='cd /opt/android-studio/bin/ && ./studio.sh && cd ~/'
+# alias android-studio='/opt/android-studio/bin/studio.sh'
 
 # Alias for exa file listing
 alias ls='exa --icons'
@@ -122,6 +122,7 @@ alias lst='exa --icons --tree'
 
 # Alias for GNOME wallpaper management script
 alias gwal='~/.gwal.sh'
+alias chwal='~/Scripts/startupPywal.sh'
 
 # Alias to shortcut icat when using kitty terminal
 alias icat='kitten icat'
@@ -143,3 +144,6 @@ alias cls='clear'
 
 # To add support for TTYs this line can be optionally added.
 # source ~/.cache/wal/colors-tty.sh
+
+# zoxide
+eval "$(zoxide init zsh)"
