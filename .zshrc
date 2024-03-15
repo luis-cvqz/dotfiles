@@ -115,13 +115,22 @@ source $ZSH/oh-my-zsh.sh
 # alias android-studio='/opt/android-studio/bin/studio.sh'
 
 # Alias for exa file listing
-alias ls='exa --icons'
-alias l='exa --icons -lah'
-alias ll='exa --icons -lh'
-alias lst='exa --icons --tree'
+#alias ls='exa --icons'
+#alias l='exa --icons -lah'
+#alias ll='exa --icons -lh'
+#alias lst='exa --icons --tree'
 
-# Alias for GNOME wallpaper management script
-alias gwal='~/.gwal.sh'
+# Function to change wal theme on GNOME
+gwal() {
+  wal --nine -n -i "$@"
+  dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
+}
+# Light wal theme
+gwal-l() {
+  wal --nine -n -l -i "$@"
+  dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
+}
+# alias gwal='~/.gwal.sh'
 alias chwal='~/Scripts/startupPywal.sh'
 
 # Alias to shortcut icat when using kitty terminal
@@ -129,6 +138,11 @@ alias icat='kitten icat'
 
 # Alieas to shortcut clear to cls
 alias cls='clear'
+
+git-token() {
+  xclip -sel c < ~/.gittoken.txt
+  # print("Git Token copied to clipboard.")
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
