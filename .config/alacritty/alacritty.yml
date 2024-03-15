@@ -10,34 +10,19 @@ scrolling:
   history: 10000
   multiplier: 3
 
-#CaskaydiaCove Nerd Fonts
-font:
-  normal:
-    family: CaskaydiaCove Nerd Font
-  bold:
-    family: CaskaydiaCove Nerd Font
-    style: Bold
-  italic:
-    family: CaskaydiaCove Nerd Font
-    style: Italic
-  bold_italic:
-    family: CaskaydiaCove Nerd Font
-    style: Bold Italic
-  size: 11
-
 #FiraCode Nerd Fonts
 #font:
 #  normal:
-#    family: FiraCode Nerd Font
+#    family: JetBrainsMono Nerd Font
 #    style: Italic
 #  bold:
-#    family: FiraCode Nerd Font
+#    family: JetBrainsMono Nerd Font
 #    style: Bold
 #  italic:
-#    family: FiraCode Nerd Font
+#    family: JetBrainsMono Nerd Font
 #    style: Italic
 #  bold_italic:
-#    family: FiraCode Nerd Font
+#    family: JetBrainsMono Nerd Font
 #    style: Bold Italic
 #  size: 11
 
@@ -106,7 +91,7 @@ colors:
 cursor:
   style:
     shape: Underline
-    blinking: Off
+    blinking: On
 
 selection:
   save_to_clipboard: false
