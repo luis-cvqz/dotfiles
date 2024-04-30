@@ -111,27 +111,31 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Alias to execute Android Studio from console
-# alias android-studio='/opt/android-studio/bin/studio.sh'
+alias cd..="cd .."
 
 # Alias for exa file listing
-#alias ls='exa --icons'
+alias ls='exa --icons'
 #alias l='exa --icons -lah'
 #alias ll='exa --icons -lh'
 #alias lst='exa --icons --tree'
 
 # Function to change wal theme on GNOME
 gwal() {
-  wal --nine -n -i "$@"
-  dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
+  wal --nine -i "$@"
+  dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
+  # dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
 # Light wal theme
 gwal-l() {
-  wal --nine -n -l -i "$@"
-  dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
+  wal --nine -l -i "$@"
+  dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
+  # dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
-# alias gwal='~/.gwal.sh'
-alias chwal='~/Scripts/startupPywal.sh'
+# Function to change wal theme to a random wallpaper
+rgwal() {
+  wal --nine -i ~/Pictures/Wallpapers/
+  dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
+}
 
 # Alias to shortcut icat when using kitty terminal
 alias icat='kitten icat'
@@ -139,9 +143,11 @@ alias icat='kitten icat'
 # Alieas to shortcut clear to cls
 alias cls='clear'
 
+alias docker='sudo docker'
+
 git-token() {
   xclip -sel c < ~/.gittoken.txt
-  # print("Git Token copied to clipboard.")
+  echo "Git Token copied to clipboard."
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -151,7 +157,7 @@ git-token() {
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 
 # Alternative (blocks terminal for 0-3ms)
 # cat ~/.cache/wal/sequences
@@ -161,3 +167,6 @@ git-token() {
 
 # zoxide
 eval "$(zoxide init zsh)"
+
+# fzf
+eval "$(fzf --zsh)"
