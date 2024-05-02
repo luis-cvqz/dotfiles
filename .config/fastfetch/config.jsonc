@@ -1,0 +1,80 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "small",
+        "padding": {
+            "top": 1,
+            "left": 3
+        }
+    },
+    "display": {
+        "separator": "  ",
+        "color": {
+            "keys": "magenta"
+        },
+        "size": {
+            "ndigits": 0,
+            "maxPrefix": "GB"
+        }
+    },
+    "modules": [
+        // {
+        //     "type": "title",
+        //     "color": {
+        //         "user": "green",
+        //         "at": "red",
+        //         "host": "blue"
+        //     }
+        // },
+        {
+            "type": "custom",
+            "key": "╭───╮"
+        },
+        {
+            "type": "os",
+            "key": "│ 󰣇 │",
+            "format": "{2} {8}"
+        },
+        {
+            "type": "kernel",
+            "key": "│  │"
+        },
+        {
+            "type": "cpu",
+            //"key": "│  │",
+            "key": "│ 󰍛 │",
+            "format": "{1}"
+        },
+        {
+            "type": "packages",
+            "key": "│  │"
+            //"key": "󰏖"
+        },
+        {
+            "type": "shell",
+            "key": "│  │"
+        },
+        {
+            "type": "terminal",
+            "key": "│  │"
+        },
+        // {
+        //     "key": "󰍛",
+        //     "type": "memory"
+        // },
+        {
+            "type": "uptime",
+            "key": "│  │"
+        },
+        {
+            "type": "colors",
+            "key": "│  │",
+            //"format": "\u001b[31m███\u001b[32m███\u001b[33m███\u001b[34m███\u001b[35m███\u001b[36m███"
+            "symbol": "circle"
+        },
+        {
+            "type": "custom",
+            "key": "╰───╯"
+        }
+    ]
+}
