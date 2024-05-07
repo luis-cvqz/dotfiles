@@ -143,11 +143,14 @@ alias icat='kitten icat'
 # Alieas to shortcut clear to cls
 alias cls='clear'
 
-alias docker='sudo docker'
-
 git-token() {
   xclip -sel c < ~/.gittoken.txt
   echo "Git Token copied to clipboard."
+}
+
+docker-token() {
+  xclip -sel c < ~/.dockertoken.txt
+  echo "Docker Token copied to clipboard."
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -170,3 +173,4 @@ eval "$(zoxide init zsh)"
 
 # fzf
 eval "$(fzf --zsh)"
+
