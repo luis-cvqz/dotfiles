@@ -24,13 +24,14 @@ Clone the repository in the $HOME directory
 ```
 Then stow all over the place
 ``` sh
-# This repository's directory disposition is designed so you can stow individual dotfiles and not all at the same time (Be aware that some may have dependencies between them)
+# This repository's directory disposition is designed so you can stow individual dotfiles and not all at the same time
+# (Be aware that some may have dependencies between them)
 > stow zsh # For a single dotfile
 > stow zsh kitty hyprland bash # For multiple dotfiles
 ```
 
 
 **Credits**
-<br>Repository created following this YouTube short guide:
+<br>Repository created following this short YouTube guide:
 
 [Stow has forever changed the way I manage my dotfiles](https://www.youtube.com/watch?v=y6XCebnB9gs)
