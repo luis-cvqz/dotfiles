@@ -7,13 +7,21 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Catppuccin Macchiato",
-  "ui_font_size": 16,
-  "buffer_font_family": "CaskaydiaCove Nerd Font",
+  "auto_update": true,
+  "autosave": "on_focus_change",
+  "theme": {
+    "mode": "dark",
+    "dark": "Catppuccin Mocha",
+    "light": "Catppuccin Latte"
+  },
+  "ui_font_size": 15,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 14,
+  "buffer_line_height": "standard",
   "terminal": {
-    "font_family": "FiraCode Nerd Font",
-    "font_size": 13
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 13,
+    "line_height": "standard"
   },
   "base-keymap": "VSCode"
 }
