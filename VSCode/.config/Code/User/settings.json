@@ -1,0 +1,34 @@
+{
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.fontFamily": "'JetbrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "redhat.telemetry.enabled": false,
+    "editor.fontLigatures": true,
+    "codesnap.showWindowTitle": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomPerWindow": false,
+    "editor.fontSize": 15,
+    "window.enableMenuBarMnemonics": false,
+    "telemetry.telemetryLevel": "off",
+    "codesnap.realLineNumbers": true,
+    "git.confirmSync": false,
+    "window.titleBarStyle": "custom",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.productIconTheme": "developer-icons",
+    "editor.minimap.enabled": false,
+    "vscode-pets.petColor": "orange",
+    "vscode-pets.petSize": "small",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "javascript": true
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "window.zoomLevel": -0.5
+}
