@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-
-import = ["~/.cache/wal/colors-alacritty.toml"]
-=======
 import = ["~/.cache/wal/colors-alacritty.toml"]
 #import = ["~/.config/alacritty/catppuccin-mocha.toml"]
->>>>>>> 8bf7f69 (Use wal colorscheme)
+
 live_config_reload = true
 
 [colors]
