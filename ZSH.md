@@ -42,7 +42,6 @@ yay -S python-pywal16
 
 ### xclip
 CLI to the X11 clipboard
-Color pallete generator
 ``` zsh
 pacman -S xclip
 ```
