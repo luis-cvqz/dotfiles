@@ -121,14 +121,18 @@ alias ls='exa --icons'
 
 # Function to change wal theme on GNOME
 gwal() {
-  wal --cols16 -i "$@"
+  wal --cols16 -b "#000000" -i "$@"
+  # When using Gnome dark mode
   dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
+  # When using Gnome light mode
   # dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
 # Light wal theme
 gwal-l() {
   wal --cols16 -l -i "$@"
+  # When using Gnome dark mode
   dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
+  # When using Gnome light mode
   # dconf write /org/gnome/desktop/background/picture-uri "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
 # Function to change wal theme to a random wallpaper
