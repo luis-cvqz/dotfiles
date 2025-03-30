@@ -18,7 +18,7 @@
   "modules": [
     {
       "type": "custom",
-      "format": "{#36}┌──── System Information ────┐" // Línea con color cyan (36), similar a la captura
+      "format": "{#36}┌──── System Information ────┐"
     },
     {
       "type": "title",
@@ -49,11 +49,11 @@
     },
     {
       "type": "custom",
-      "format": "{#36}└──────────────────────────────┘" // Cierra la sección
+      "format": "{#36}└──────────────────────────────┘"
     },
     {
       "type": "custom",
-      "format": "{#36}┌──── Software Information ────┐" // Sección intermedia
+      "format": "{#36}┌──── Software Information ────┐"
     },
     {
       "type": "wm",
@@ -73,11 +73,11 @@
     },
     {
       "type": "custom",
-      "format": "{#36}└──────────────────────────────┘" // Cierra la sección
+      "format": "{#36}└──────────────────────────────┘"
     },
     {
       "type": "custom",
-      "format": "{#36}┌──── Hardware Information ────┐" // Sección hardware
+      "format": "{#36}┌──── Hardware Information ────┐"
     },
     {
       "type": "chassis",
@@ -110,7 +110,7 @@
     },
     {
       "type": "custom",
-      "format": "{#36}└──────────────────────────────┘" // Cierra la sección
+      "format": "{#36}└──────────────────────────────┘"
     },
     {
       "type": "colors",
