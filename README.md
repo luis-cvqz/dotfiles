@@ -15,6 +15,7 @@ pacman -S stow
 ```
 pacman -S git
 ```
+To stow zsh, check [zsh pre-requisites](ZSH.md) for more information about pre-requisites.
 
 ## Usage
 Clone the repository in the $HOME directory
