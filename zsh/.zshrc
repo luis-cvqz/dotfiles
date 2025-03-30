@@ -5,22 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Path to bin directory
 export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# -- Oh My Zsh Theme --
 ZSH_THEME=powerlevel10k/powerlevel10k
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -68,14 +60,7 @@ ZSH_THEME=powerlevel10k/powerlevel10k
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# -- Oh My Zsh Plugins --
 plugins=(
   git
   zsh-autosuggestions
@@ -89,7 +74,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# export LANG=es_MX.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -101,22 +86,28 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# -- Aliases --
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias to shortcut cd to the previous directory
 alias cd..="cd .."
+
+# Alias to shortcut clear to cls
+alias cls='clear'
+
+# Alias to shortcut icat when using kitty terminal
+alias icat='kitten icat'
 
 # Alias for exa file listing
 alias ls='exa --icons'
-#alias l='exa --icons -lah'
-#alias ll='exa --icons -lh'
-#alias lst='exa --icons --tree'
+
+# -- Functions --
+# Set personal functions. Functions can be defined here, though oh-my-zsh
+# users are encouraged to define functions within the ZSH_CUSTOM folder.
+# For a full list of active functions, run `functions`.
 
 # Function to change wal theme on GNOME
 gwal() {
@@ -140,20 +131,10 @@ rgwal() {
   dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
 
-# Alias to shortcut icat when using kitty terminal
-alias icat='kitten icat'
-
-# Alieas to shortcut clear to cls
-alias cls='clear'
-
+# Function to copy the git token to clipboard
 git-token() {
   xclip -sel c < ~/.gittoken.txt
   echo "Git Token copied to clipboard."
-}
-
-docker-token() {
-  xclip -sel c < ~/.dockertoken.txt
-  echo "Docker Token copied to clipboard."
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -171,8 +152,8 @@ docker-token() {
 # To add support for TTYs this line can be optionally added.
 # source ~/.cache/wal/colors-tty.sh
 
-# zoxide
+# zoxide smart directory jumper
 eval "$(zoxide init zsh)"
 
-# fzf
+# fzf fuzzy finder
 eval "$(fzf --zsh)"
