@@ -1,81 +1,121 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "type": "small",
-        "padding": {
-            "top": 1,
-            "left": 3
-        }
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "padding": {
+      "top": 1,
+      "right": 2
+    }
+  },
+  "display": {
+    "separator": " ➜ ",
+    "size": {
+      "ndigits": 0,
+      "maxPrefix": "GB"
     },
-    "display": {
-        "separator": "  ",
-        "color": {
-            "keys": "magenta"
-        },
-        "size": {
-            "ndigits": 0,
-            "maxPrefix": "GB"
-        }
+    "hideCursor": true
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "{#36}┌──── System Information ────┐" // Línea con color cyan (36), similar a la captura
     },
-    "modules": [
-        // {
-        //     "type": "title",
-        //     "color": {
-        //         "user": "green",
-        //         "at": "red",
-        //         "host": "blue"
-        //     }
-        // },
-        {
-            "type": "custom",
-            "key": "╭───╮"
-        },
-        {
-            "type": "os",
-            "key": "│ 󰣇 │",
-            "format": "{2} {8}"
-        },
-        {
-            "type": "kernel",
-            "key": "│  │"
-        },
-        {
-            "type": "cpu",
-            //"key": "│  │",
-            "key": "│ 󰍛 │",
-            "format": "{1}"
-        },
-        {
-            "type": "packages",
-            "key": "│  │"
-            //"key": "󰏖"
-        },
-        {
-            "type": "shell",
-            //"key": "│  │"
-            "key": "│  │"
-        },
-        {
-            "type": "terminal",
-            "key": "│  │"
-        },
-        // {
-        //     "key": "󰍛",
-        //     "type": "memory"
-        // },
-        {
-            "type": "uptime",
-            "key": "│  │"
-        },
-        {
-            "type": "colors",
-            "key": "│  │",
-            //"format": "\u001b[31m███\u001b[32m███\u001b[33m███\u001b[34m███\u001b[35m███\u001b[36m███"
-            "symbol": "circle"
-        },
-        {
-            "type": "custom",
-            "key": "╰───╯"
-        }
-    ]
+    {
+      "type": "title",
+      "key": "\uf108",
+      "format": "{2}"
+    },
+    {
+      "type": "os",
+      "key": "\uf17c",
+      "format": "{2} {12}"
+    },
+    {
+      "type": "kernel",
+      "key": "\ue266",
+      "format": "{1} {2}"
+    },
+    {
+      "type": "packages",
+      "key": "\uf187"
+    },
+    {
+      "type": "shell",
+      "key": "\uf120"
+    },
+    {
+      "type": "uptime",
+      "key": "\uf017"
+    },
+    {
+      "type": "custom",
+      "format": "{#36}└──────────────────────────────┘" // Cierra la sección
+    },
+    {
+      "type": "custom",
+      "format": "{#36}┌──── Software Information ────┐" // Sección intermedia
+    },
+    {
+      "type": "wm",
+      "key": "\uf2d0"
+    },
+    {
+      "type": "lm",
+      "key": "\uf52b"
+    },
+    {
+      "type": "icons",
+      "key": "\uf53f"
+    },
+    {
+      "type": "terminal",
+      "key": "\uf489"
+    },
+    {
+      "type": "custom",
+      "format": "{#36}└──────────────────────────────┘" // Cierra la sección
+    },
+    {
+      "type": "custom",
+      "format": "{#36}┌──── Hardware Information ────┐" // Sección hardware
+    },
+    {
+      "type": "chassis",
+      "key": "\uf0a0",
+      "format": "{1}"
+    },
+    {
+      "type": "host",
+      "key": "\uf02b",
+      "format": "{2}"
+    },
+    {
+      "type": "cpu",
+      "key": "\uf2db",
+      "format": "{1} ({5}) @ {7}"
+    },
+    {
+      "type": "gpu",
+      "key": "\uf26c",
+      "format": "{1} {2} [{6}]"
+    },
+    {
+      "type": "memory",
+      "key": "\uf538"
+    },
+    {
+      "type": "display",
+      "key": "\uf26c",
+      "format": "{1}x{2} @ {3}Hz in {12}\""
+    },
+    {
+      "type": "custom",
+      "format": "{#36}└──────────────────────────────┘" // Cierra la sección
+    },
+    {
+      "type": "colors",
+      "key": " ",
+      "symbol": "square"
+    }
+  ]
 }
