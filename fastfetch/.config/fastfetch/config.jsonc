@@ -22,95 +22,103 @@
     },
     {
       "type": "title",
-      "key": "\uf108",
+      "key": " Device",
       "format": "{2}"
     },
     {
       "type": "os",
-      "key": "\uf17c",
+      "key": " Distro",
       "format": "{2} {12}"
     },
     {
       "type": "kernel",
-      "key": "\ue266",
+      "key": " Kernel",
       "format": "{1} {2}"
     },
     {
       "type": "packages",
-      "key": "\uf187"
+      "key": " Packages"
     },
     {
       "type": "shell",
-      "key": "\uf120"
+      "key": " Shell"
     },
     {
       "type": "uptime",
-      "key": "\uf017"
+      "key": " Uptime",
+      "keyIcon": ""
     },
     {
       "type": "custom",
-      "format": "{#36}└──────────────────────────────┘"
+      "format": "└────────────────────────────┘",
+      "outputColor": "magenta"
     },
     {
       "type": "custom",
-      "format": "{#36}┌──── Software Information ────┐"
+      "format": "┌──── Software Information ────┐",
+      "outputColor": "green"
     },
     {
       "type": "wm",
-      "key": "\uf2d0"
+      "key": " WM",
+      "keyColor": "green"
     },
     {
       "type": "lm",
-      "key": "\uf52b"
+      "key": " LM",
+      "keyColor": "green"
     },
     {
       "type": "icons",
-      "key": "\uf53f"
+      "key": " Icons",
+      "keyColor": "green"
     },
     {
       "type": "terminal",
-      "key": "\uf489"
+      "key": " Terminal",
+      "keyColor": "green"
     },
     {
       "type": "custom",
-      "format": "{#36}└──────────────────────────────┘"
+      "format": "└──────────────────────────────┘",
+      "outputColor": "green"
     },
     {
       "type": "custom",
-      "format": "{#36}┌──── Hardware Information ────┐"
+      "format": "{#36}┌───────────── Hardware Information ─────────────┐"
     },
     {
       "type": "chassis",
-      "key": "\uf0a0",
+      "key": " Chassis",
       "format": "{1}"
     },
     {
       "type": "host",
-      "key": "\uf02b",
+      "key": " Host",
       "format": "{2}"
     },
     {
       "type": "cpu",
-      "key": "\uf2db",
+      "key": " CPU",
       "format": "{1} ({5}) @ {7}"
     },
     {
       "type": "gpu",
-      "key": "\uf26c",
-      "format": "{1} {2} [{6}]"
+      "key": " GPU",
+      "format": "{1} {2}"
     },
     {
       "type": "memory",
-      "key": "\uf538"
+      "key": " Memory"
     },
     {
       "type": "display",
-      "key": "\uf26c",
+      "key": " Display",
       "format": "{1}x{2} @ {3}Hz in {12}\""
     },
     {
       "type": "custom",
-      "format": "{#36}└──────────────────────────────┘"
+      "format": "{#36}└────────────────────────────────────────────────┘"
     },
     {
       "type": "colors",
