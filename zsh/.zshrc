@@ -131,6 +131,7 @@ rgwal() {
   dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
 
+# Function to copy the git token for CLI authentication to clipboard
 git-token() {
   local token_file="$HOME/.gittoken"
 
