@@ -131,10 +131,21 @@ rgwal() {
   dconf write /org/gnome/desktop/background/picture-uri-dark "'file://$(cat ${HOME}/.cache/wal/wal)'"
 }
 
-# Function to copy the git token to clipboard
 git-token() {
-  xclip -sel c < ~/.gittoken.txt
-  echo "Git Token copied to clipboard."
+  local token_file="$HOME/.gittoken"
+
+  if [[ ! -f "$token_file" ]]; then
+    echo "Error: the file '$token_file' doesn't exist."
+    return 1
+  fi
+
+  if [[ ! -s "$token_file" ]]; then
+    echo "Error: the file '$token_file' is empty."
+    return 1
+  fi
+
+  xclip -sel c < "$token_file"
+  echo "Git token copied to clipboard."
 }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
